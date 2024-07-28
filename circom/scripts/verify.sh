@@ -6,4 +6,4 @@ DIST=dist
 mkdir -p ${DIST}
 
 # Verify the proof
-snarkjs groth16 verify ${DIST}/circuit.vk ${DIST}/circuit.inst.json ${DIST}/circuit.pf.json
+snarkjs groth16 verify ${DIST}/verification_key.json ${DIST}/public.json ${DIST}/proof.json

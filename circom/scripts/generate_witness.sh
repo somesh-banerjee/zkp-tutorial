@@ -14,4 +14,4 @@ DIST=dist
 mkdir -p ${DIST}
 
 # Generate the witness
-node ${DIST}/circuit_js/generate_witness.js ${DIST}/circuit_js/circuit.wasm ${FOLDER}/input.json ${DIST}/circuit.wtns
+node ${DIST}/circuit_js/generate_witness.js ${DIST}/circuit_js/circuit.wasm ${FOLDER}/input.json ${DIST}/witness.wtns

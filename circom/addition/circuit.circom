@@ -1,9 +1,11 @@
-pragma circom 2.1.4;
+pragma circom 2.0.0;
 
 template Add() {
-    signal input in[3];
+    signal input a;
+    signal input b;
 
-    in[0] === in[1] + in[2];
+    signal output out;
+    out <== a + b;
 }
 
 component main  = Add();
