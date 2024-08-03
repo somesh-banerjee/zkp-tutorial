@@ -1,0 +1,15 @@
+{
+  "name": "circom",
+  "version": "1.0.0",
+  "description": "Complete the documentation in the [Circom](https://docs.circom.io/) and have basic knowledge of the circom language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  }
+}
