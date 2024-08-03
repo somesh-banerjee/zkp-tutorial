@@ -14,4 +14,4 @@ DIST=dist
 mkdir -p ${DIST}
 
 # Compile the circuit
-circom ${FOLDER}/circuit.circom --r1cs --wasm --output ${DIST}
+circom ${FOLDER}/circuit.circom --r1cs --wasm --output ${DIST} --O1

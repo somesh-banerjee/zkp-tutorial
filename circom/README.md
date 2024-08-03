@@ -42,14 +42,21 @@ cargo build --release
 cargo install --path circom
 ```
 
-To run the circuits, go to the respective directory whose circuit you want to work with and follow the steps below:
+To run the circuits, go to the respective directory whose circuit you want to work with and follow the steps as given in circom documentation.
 
-1. Compile circuit
+I have created bash scripts to run the circuits. You can run the whole process by running the bash script.
 
 ```bash
-circom addition/circuit.circom --r1cs --wasm
+# already in the circom directory
+./scripts/run_all.sh <example_folder>
 ```
 
-2. Computing witness: The `input.json` file is already provided in the respective directory. You can modify the input.json file to test with different values.
+The outputs will be generated in the `dist` folder. For example, in public.json, the public output will be stored, and in proof.json, the proof output will be stored.
 
-```bash
+## Common Errors
+
+- Most of the time, the error occurs at witness generation due to the wrong input. Make sure you are providing the correct input to the circuit.
+
+- snarkJS: Error: Scalar size does not match: Probably some logic error.
+    - check there is output in the circuit
+    - if performing only additions, make sure add --O1 flag in the circom command for compilation
