@@ -8,8 +8,11 @@ pragma circom 2.1.4;
 include "../node_modules/circomlib/circuits/poseidon.circom";
 
 template poseidon() {
-   signal input a, b, c, d;
-   signal output out <== Poseidon(4)([a,b,c,d]);
+    // the input variables are BigInts
+    signal input a, b, c, d;
+    // declare a Poseidon component with 4 inputs
+    // and there will be 1 output i.e. the hash of the 4 inputs
+    signal output out <== Poseidon(4)([a,b,c,d]);
 }
 
 component main = poseidon();

@@ -14,9 +14,8 @@ This directory has circom circuits for different example, such as:
 - [ForLoop]
 - [Power]
 - [Range]
-- [Salt]
+- [MiMCSalt]
 - [QuadraticEquation]
-- [Compile]
 - [Sudoku]
 - [Sujiko]
 
