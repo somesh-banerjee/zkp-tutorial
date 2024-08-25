@@ -29,3 +29,4 @@ The repo contain circuits code for many basic examples in different languages su
 
 - [UC Berkeley zkp class](https://github.com/rdi-berkeley/zkp-course-lecture3-code/tree/main)
 - [zkp puzzles by rareskills](https://github.com/RareSkills/zero-knowledge-puzzles)
+- [Medium article on How SNARK works](https://medium.com/@imolfar/why-and-how-zk-snark-works-1-introduction-the-medium-of-a-proof-d946e931160) / [PDF Version](https://arxiv.org/abs/1906.07221) (Must read)
